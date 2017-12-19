@@ -3,10 +3,6 @@ module.exports = {
         searchTerm : 'nightwatch',
         movieName : 'Night Watch'
     },
-    'french': { // 'french' environnement parameters
-        searchTerm : 'dikkenek',
-        movieName : 'dikkenek'
-    },
 
     // Abord all on test fail
     abortOnAssertionFailure: true,

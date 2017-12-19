@@ -1,18 +1,14 @@
+const path = require('path');
+
 module.exports = {
-    'Go To google': (browser) => {
+    'Go To site': (browser) => {
+        const filePathAbsolute = path.join(__dirname, 'data/uploadExample.txt');
+        console.log(filePathAbsolute);
         browser
             .init()
             .waitForElementVisible('body')
-            .setValue('input[type=text]', browser.globals.searchTerm)
-            .waitForElementVisible('button[name=btnG]')
-            .click('button[name=btnG]')
-            .pause(1000)
-    },
-
-    'Check movie name': (browser) => {
-        browser
-            .assert.containsText('.mod .kno-ecr-pt.kno-fb-ctx', browser.globals.movieName)
-            .assert.containsText('.mod ._gdf', '2004')
+            .sendKeys('input[type=file]', filePathAbsolute)
+            .pause(1000);
     },
 
     after: (browser) => {

@@ -1,19 +1,30 @@
-# Nightwatch Boilerplate project
+# nightwatch-boilerplate
 
-## Getting Started
+POC based on nightwatch-boilerplate. This demo app is POC for file upload in nightwatch.
 
-Install deps :
-`npm install`
+Preinstall:
 
-To run Acceptance test, just run :
-`npm test`
+1. npm install -g protractor
+2. npm install -g bower
+ 
+ ```sh
+ 
+ $ git clone https://github.com/yuristsepaniuk/protractor-fullstack.git
+ 
+ $ cd example
+ 
+ $ npm install
+  
+ $ bower install
 
-## Explanations
+ $ grunt server
 
-If you are looking for a more complex example, take a look to page-object-assertion-command branch.
-The project is organize as following :
- * nw/logs : Selenium log
- * nw/reports : xUnit reports
- * nw/tests : Test suites
- * nightwatch.json : Nightwatch configuration file
- * nightwatch.globals.js : Nightwatch globals file
+ $ open one more terminal
+
+ $ git clone https://github.com/yuristsepaniuk/nightwatch-boilerplate.git
+
+ $ npm install
+
+ $ npm test
+ 
+ ```
